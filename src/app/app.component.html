@@ -7,14 +7,14 @@
 
 <br>
 
-<tabs>
-  <tab *ngFor="let tab of tabs">
-    <tab-title>
+<se-tabs>
+  <se-tab *ngFor="let tab of tabs">
+    <se-tab-title>
       Tab <b>{{ tab }}</b> title
-    </tab-title>
-    <tab-content>
+    </se-tab-title>
+    <se-tab-content>
       Tab <b>{{ tab }}</b> content
       <test [tab]="tab"></test>
-    </tab-content>
-  </tab>
-</tabs>
+    </se-tab-content>
+  </se-tab>
+</se-tabs>
