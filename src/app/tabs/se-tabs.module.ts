@@ -1,3 +1,4 @@
+import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 
 import { SETabsComponent } from "./se-tabs.component";
@@ -6,6 +7,7 @@ import { SETabContentComponent } from "./tab/tab-content/se-tab-content.componen
 import { SETabTitleComponent } from "./tab/tab-title/se-tab-title.component";
 
 @NgModule({
+  imports: [CommonModule],
   exports: [
     SETabsComponent,
     SETabComponent,

@@ -1,13 +1,20 @@
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core";
+import {
+  ChangeDetectionStrategy,
+  Component,
+  TemplateRef,
+  ViewChild,
+} from "@angular/core";
 
 @Component({
   selector: "se-tab-title",
-  template: `<ng-content></ng-content>`,
-  styleUrls: ["./style/se-tab-title.scss"],
+  template: `<ng-template><ng-content></ng-content></ng-template>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SETabTitleComponent implements OnInit {
-  constructor() {}
+export class SETabTitleComponent {
+  @ViewChild(TemplateRef, { static: true })
+  private template: TemplateRef<any>;
 
-  ngOnInit() {}
+  getTemplate(): TemplateRef<any> {
+    return this.template;
+  }
 }
