@@ -1,5 +1,13 @@
 <div class="tabs__titles">
-  <div *ngFor="let tab of tabs" class="tabs__title">
-      <ng-container *ngTemplateOutlet="tab.getTitle()"></ng-container>
+  <div 
+    *ngFor="let tab of tabs; index as index"
+    class="tabs__title"
+    [class.tabs__title--active]="isTabSelected(index)"
+    (click)="selectTab(index)" 
+  >
+    <ng-container *ngTemplateOutlet="tab.getTitle()"></ng-container>
   </div>
+</div>
+<div>
+  <ng-container *ngTemplateOutlet="getActiveTabContent()"></ng-container>
 </div>
