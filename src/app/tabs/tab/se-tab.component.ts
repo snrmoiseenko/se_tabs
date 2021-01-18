@@ -5,13 +5,13 @@ import {
   EventEmitter,
   Output,
   TemplateRef,
-} from "@angular/core";
+} from '@angular/core';
 
-import { SETabContentComponent } from "./tab-content/se-tab-content.component";
-import { SETabTitleComponent } from "./tab-title/se-tab-title.component";
+import { SETabContentComponent } from './tab-content/se-tab-content.component';
+import { SETabTitleComponent } from './tab-title/se-tab-title.component';
 
 @Component({
-  selector: "se-tab",
+  selector: 'se-tab',
   template: `<ng-content></ng-content>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

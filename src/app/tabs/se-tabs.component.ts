@@ -7,13 +7,13 @@ import {
   OnInit,
   QueryList,
   TemplateRef,
-} from "@angular/core";
+} from '@angular/core';
 
-import { SETabComponent } from "./tab/se-tab.component";
+import { SETabComponent } from './tab/se-tab.component';
 
 @Component({
-  selector: "se-tabs",
-  templateUrl: "se-tabs.component.html",
+  selector: 'se-tabs',
+  templateUrl: 'se-tabs.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SETabsComponent implements OnInit, AfterViewInit {

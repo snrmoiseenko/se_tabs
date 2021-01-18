@@ -3,12 +3,12 @@ import {
   Directive,
   TemplateRef,
   ViewContainerRef,
-} from "@angular/core";
+} from '@angular/core';
 
-import { SETabComponent } from "./se-tab.component";
-import { SETabsComponent } from "../se-tabs.component";
+import { SETabComponent } from './se-tab.component';
+import { SETabsComponent } from '../se-tabs.component';
 
-@Directive({ selector: "[seDynamicTabContent]" })
+@Directive({ selector: '[seDynamicTabContent]' })
 export class SEDynamicTabContentDirective {
   constructor(
     private vc: ViewContainerRef,

@@ -3,10 +3,10 @@ import {
   Component,
   TemplateRef,
   ViewChild,
-} from "@angular/core";
+} from '@angular/core';
 
 @Component({
-  selector: "se-tab-title",
+  selector: 'se-tab-title',
   template: `<ng-template><ng-content></ng-content></ng-template>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
