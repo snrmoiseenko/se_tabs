@@ -12,7 +12,7 @@
     <se-tab-title>
       Tab <b>{{ tab }}</b> title
     </se-tab-title>
-    <se-tab-content>
+    <se-tab-content *seDynamicTabContent>
       Tab <b>{{ tab }}</b> content
       <test [tab]="tab"></test>
     </se-tab-content>
